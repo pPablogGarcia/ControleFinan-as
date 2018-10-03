@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "dev": "nodemon loader.js",
+    "production" : "pm2 start loader.js --name backend"
+  },
+  "author": "Pablo Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-query-int": "^3.0.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.3.1",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.1",
+    "node-restful": "^0.2.6",
+    "pm2": "^3.1.3"
+  }
+}
