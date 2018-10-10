@@ -1,12 +1,14 @@
 const BillingCycle = require("./billingCyle.js");
 
 BillingCycle.methods(["get", "post", "put", "delete"]);
-BillingCycle.updateOptions({new: true, runValidators: true});
+BillingCycle.updateOptions({ new: true, runValidators: true });
 
-BiilingCycle.route('count', function(req, res, next){
-    BiilingCycle.count(function(error, value){
-        if(error){
-            res.status(500).json({errors: [error]})
+BillingCycle.route('count', function (req, res, next) {
+    BillingCycle.count(function (error, value) {
+        if (error) {
+            res.status(500).json({ errors: [error] })
+        } else {
+            res.json({ value });
         }
     });
 });
