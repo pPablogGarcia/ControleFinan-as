@@ -11,10 +11,14 @@ Controle de débitos e créditos. :yen: :dollar: :pound: :euro: :credit_card: :m
 ***
 
 ### Api Routes :bicyclist:
+## BillingCycles Routes
  * **GET :**  localhost:3003/api/billingCycles :spades:
  * **POST :**  localhost:3003/api/billingCycles :hearts:
  * **PUT :** localhost:3003/api/billingCycles/:id :clubs:
  * **DELETE :** localhost:3003/api/billingCycles/:id :diamonds:
+ 
+ ## Billing Summary
+ * **GET:** localhost:3003/api/billingSummary
  ***
  
  ### Comando pra clonar o projeto :suspect::suspect:
