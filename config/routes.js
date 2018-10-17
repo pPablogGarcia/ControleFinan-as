@@ -12,4 +12,7 @@ function routes(server) {
     //API routes
     const billingCyleService = require("../api/billingCycle/billingCycleService.js");
     billingCyleService.register(router, "/billingCycles");
+
+    const billingSummaryService = require("../api/billingSummary/billingSummaryService.js");
+    router.route("/billingSummary").get(billingSummaryService.getSummary);
 };
