@@ -10,7 +10,7 @@ Controle de débitos e créditos. :yen: :dollar: :pound: :euro: :credit_card: :m
 * npm start
 ***
 
-### Api Routes :bicyclist:
+### Api Routes
 ## BillingCycles Routes
  * **GET :**  localhost:3003/api/billingCycles :spades:
  * **POST :**  localhost:3003/api/billingCycles :hearts:
