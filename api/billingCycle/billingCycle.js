@@ -8,7 +8,7 @@ const creditSchema = new mongoose.Schema({
 
 const debtSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    value: { type: Number, required: true },
+    value: { type: Number, required: [true, 'Informe o valor do débito!'] },
     status: { type: String, required: false, uppercase: true, enum: ["PAGO", "PENDENTE", "AGENDADO"] }
 });
 
@@ -21,4 +21,4 @@ const billingCycleSchema = new mongoose.Schema({
 });
 
 console.log("model ==> ok");
-module.exports = restful.model('BillingCyle', billingCycleSchema);
+module.exports = restful.model('BillingCycle', billingCycleSchema);
