@@ -1,4 +1,4 @@
-const BillingCycle = require("./billingCyle.js");
+const BillingCycle = require("./billingCycle.js");
 
 BillingCycle.methods(["get", "post", "put", "delete"]);
 BillingCycle.updateOptions({ new: true, runValidators: true });
