@@ -1,0 +1,14 @@
+html{
+    background-color: #ecf0f5; 
+}
+.main-footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+.center-text{
+    text-align:left;
+}
+.info-box-icon{
+    height: 100%;
+}
