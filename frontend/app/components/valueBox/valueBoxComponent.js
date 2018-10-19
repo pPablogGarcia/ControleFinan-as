@@ -1,6 +1,6 @@
 angular.module("finance")
     .component("valueBox", {
-        bindings: { grid: "@", value: "@", text: "@" },
+        bindings: { grid: "@", value: "@", text: "@", colorClass: "@", iconClass: "@" },
         controller: ["gridSystem", Grid],
         templateUrl: "components/valueBox/valueBoxComponent.html"
     });
