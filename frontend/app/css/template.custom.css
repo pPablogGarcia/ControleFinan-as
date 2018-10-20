@@ -12,3 +12,7 @@ html{
 .info-box-icon{
     height: 100%;
 }
+.version{
+    font-size: 10px;
+    text-decoration: underline #e0e0e0;
+}

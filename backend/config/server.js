@@ -4,10 +4,12 @@ const morgan = require("morgan");
 const express = require("express");
 
 const server = express();
+const allowsCors = require("./cors.js")
 
 server.use(morgan("dev"));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
+server.use(allowsCors);
 
 server.listen(port, () => { console.log(`Servidor running on port : ${port} \n`); });
 
