@@ -1,0 +1,11 @@
+<diV ng-controller="DashboardController as dash">
+    <content-header name="{{:: dash.header}}" small="{{:: dash.version}}"></content-header>
+
+    <section class="content">
+
+        <value-box grid="4" value="{{:: dash.credit | number: 2}}" text="Total de Crédito" color-class="bg-olive" icon-class="fa fa-bank"></value-box>
+        <value-box grid="4" value="{{:: dash.debt | number: 2}}" text="Total de Débito" color-class="bg-red" icon-class="fa fa-credit-card"></value-box>
+        <value-box grid="4" value="{{:: dash.total | number: 2}}" text="Total Consolidado" color-class="bg-blue" icon-class="fa fa-empire  "></value-box>
+
+    </section>
+</diV>
