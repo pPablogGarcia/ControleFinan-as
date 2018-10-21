@@ -9,8 +9,8 @@
                     templateUrl: "views/Dashboard/dashboard.html"
                 });
                 $stateProvider.state("billingCycle", {
-                    url: "/billingCycle",
-                    templateUrl: "views/BillingCycle/billingCycle.html"
+                    url: "/billingCycle?page",
+                    templateUrl: "views/BillingCycle/tabs.html"
                 });
                 $stateProvider.state("limbo", {
                     url: "/limbo",

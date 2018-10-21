@@ -5,7 +5,7 @@
   "main": "loader.js",
   "scripts": {
     "dev": "nodemon loader.js",
-    "production": "pm2 start loader.js --name backend"
+    "production": "pm2 start loader.js --name backend && pm2 monit"
   },
   "author": "Pablo Garcia",
   "license": "ISC",

@@ -1,0 +1,43 @@
+<div ng-controller="BillingCycleController as billing">
+    <content-header name="{{:: billing.name}}" small="{{:: billing.title}}"></content-header>
+
+    <section class="content">
+
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li ng-if="billing.tabList" ng-class="{active: billing.tabList}">
+                    <a href data-target="#tabList" data-toggle="tab">
+                        <i class="fa fa-bars"></i> Lista
+                    </a>
+                </li>
+
+                <li ng-if="billing.tabCreate" >
+                    <a href data-target="#tabCreate" data-toggle="tab">
+                        <i class="fa fa-plus"></i> Novo
+                    </a>
+                </li>
+
+                <li ng-if="billing.tabUpdate" ng-class="{active: billing.tabUpdate}">
+                    <a href data-target="#tabUpdate" data-toggle="tab">
+                        <i class="fa fa-pencil"></i> Atualizar
+                    </a>
+                </li>
+
+                <li ng-if="billing.tabDelete" ng-class="{active: billing.tabDelete}">
+                    <a href data-target="#tabDelete" data-toggle="tab">
+                        <i class="fa fa-trash-o"></i> Excluir
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="tabList" ng-include="'/views/BillingCycle/list.html'" ng-if="billing.tabList" ng-class="{active: billing.tabList}"></div>
+                <div class="tab-pane" id="tabCreate" ng-include="'/views/BillingCycle/form.html'" ng-if="billing.tabCreate"></div>
+                <div class="tab-pane" id="tabUpdate" ng-include="'/views/BillingCycle/form.html'" ng-if="billing.tabUpdate" ng-class="{active: billing.tabUpdate}"></div>
+                <div class="tab-pane" id="tabDelete" ng-include="'/views/BillingCycle/form.html'" ng-if="billing.tabDelete" ng-class="{active: billing.tabDelete}"></div>
+            </div>
+
+        </div>
+
+    </section>
+</div>

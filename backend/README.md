@@ -16,6 +16,8 @@ Controle de débitos e créditos. :yen: :dollar: :pound: :euro: :credit_card: :m
  * **POST :**  localhost:3003/api/billingCycles :hearts:
  * **PUT :** localhost:3003/api/billingCycles/:id :clubs:
  * **DELETE :** localhost:3003/api/billingCycles/:id :diamonds:
+
+ * **GET :** localhost:3003/api/billingCycles/count
  
  ## Billing Summary
  * **GET:** localhost:3003/api/billingSummary

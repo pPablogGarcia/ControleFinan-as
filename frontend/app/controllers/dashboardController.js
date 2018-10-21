@@ -11,24 +11,24 @@
 
         GetSummary();
         function GetSummary() {
+            const url = "http://localhost:3003/api/billingSummary";
             $http
-                .get("http://localhost:3003/api/billingSummary")
+                .get(url)
                 .then(Response)
                 .catch(ErrorResp);
         };
 
         function Response(response) {
-            console.log(response);
-            if (!response.data == null || !response.data == undefined) {
-                vm.credit = response.data.credit;
-                vm.debt = response.data.debt;
-                vm.total = vm.credit - vm.debt;
-            }
+
+            const { credit = 0, debt = 0 } = response.data;
+
+            vm.credit = credit;
+            vm.debt = debt;
+            vm.total = credit - debt;
         };
 
-        function ErrorResp(error) {
-            console.error(error);
-            vm.credit = vm.debt = vm.total = 0;
-        }
-    }
+        function ErrorResp(response) {       
+            vm.credit = vm.debt = vm.total = 0
+        };
+    };
 })();

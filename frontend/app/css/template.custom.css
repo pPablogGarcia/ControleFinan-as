@@ -5,9 +5,10 @@ html{
     position: fixed;
     bottom:0;
     width: 100%;
+    font-size: 0.6em;
 }
 .center-text{
-    text-align:left;
+    text-align:center;
 }
 .info-box-icon{
     height: 100%;
@@ -15,4 +16,10 @@ html{
 .version{
     font-size: 10px;
     text-decoration: underline #e0e0e0;
+}
+#toast-container{
+ top: 60px;
+}
+.table-actions{
+    width:140px;
 }

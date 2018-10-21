@@ -9,7 +9,7 @@ BillingCycle
     .after("put", sendErrorOrNext);
 
 BillingCycle.route('count', function (req, res, next) {
-    BillingCycle.count(function (error, value) {
+    BillingCycle.countDocuments(function (error, value) {
         if (error) {
             res.status(500).json({ errors: [error] })
         } else {
