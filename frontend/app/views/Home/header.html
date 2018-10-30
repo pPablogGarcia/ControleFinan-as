@@ -3,6 +3,37 @@
     <span class="logo-lg"><i class="fa fa-dollar" style="color: #005e33;"></i> <b>Controle</b> Finanças</span>
 </a>
 
-<nav class="navbar navbar-static-top">
+<!-- <nav class="navbar navbar-static-top">
     <a href class="sidebar-toggle" data-toggle="offcanvas"></a>
+</nav> -->
+<nav class="navbar navbar-static-top" role="navigation" ng-controller="AuthController as auth">
+    <a href class="sidebar-toggle" data-toggle="offcanvas"></a>
+
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="user-image"
+                        alt="User Image">
+                    <span class="hidden-xs">{{:: auth.getUser().name}}</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="user-header">
+                        <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle"
+                            alt="User Image">
+                        <p>
+                            {{:: auth.getUser().name}}
+                            <small>{{:: auth.getUser().email}}</small>
+                        </p>
+                    </li>
+                    <li class="user-footer">
+                        <div class="pull-right">
+                            <a href="#" class="btn btn-default btn-flat" ng-click="auth.logout()">Sair</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>&nbsp;</li>
+        </ul>
+    </div>
 </nav>
